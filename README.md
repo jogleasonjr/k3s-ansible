@@ -19,7 +19,10 @@ on processor architecture:
 ## System requirements
 
 Deployment environment must have Ansible 2.4.0+
-Master and nodes must have passwordless SSH access
+
+Master and nodes must have:
+* Passwordless SSH e.g. `ssh-copy-id debian@master_ip`
+* Passwordless sudo e.g. run `visudo` and specify `debian ALL=(ALL) NOPASSWD: ALL`
 
 ## Usage
 
